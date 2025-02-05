@@ -1,0 +1,50 @@
+# Build directories
+/build/
+/bin/
+#/lib/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+
+# Visual Studio files
+*.sln
+*.vcxproj*
+*.user
+*.filters
+*.ncb
+*.suo
+*.sdf
+*.opensdf
+
+# Compiled files
+*.exe
+#*.dll
+#*.lib
+*.so
+*.dylib
+*.a
+*.o
+*.obj
+*.pch
+*.pdb
+*.ilk
+*.idb
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Editor-specific files
+#.vscode/
+.idea/
+*.code-workspace
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+Desktop.ini
