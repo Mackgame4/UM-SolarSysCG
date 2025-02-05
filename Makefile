@@ -14,6 +14,8 @@ TOOLKIT_SUBDIRS = $(TOOLKITS_FOLDER)/glut;$(TOOLKITS_FOLDER)/glew;$(TOOLKITS_FOL
 # The default target: run configuration and build
 all: configure build run
 
+dev: build run
+
 # Configure the project using CMake
 configure:
 	@echo "Configuring the project in $(BUILD_DIR)..."

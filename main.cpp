@@ -7,6 +7,7 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 #include <stdio.h>
+#include "config.h"
 
 // Global time variable
 float timeElapsed = 0.0f;
@@ -67,7 +68,7 @@ int main(int argc, char** argv) {
 	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowPosition(100, 100);
 	glutInitWindowSize(800, 800);
-	glutCreateWindow("CG@DI-UM");
+	glutCreateWindow(WINDOW_NAME);
 	// put callback registry here
 	glutDisplayFunc(renderScene);
 	glutReshapeFunc(changeSize);
