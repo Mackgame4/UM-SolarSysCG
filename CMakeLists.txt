@@ -1,52 +1,65 @@
 cmake_minimum_required(VERSION 3.10)
 
-# Project Name
-PROJECT(SolarSysCG)
+project(cg)
 
-set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -pedantic")
 
-add_executable(${PROJECT_NAME} main.cpp)
+set(CMAKE_TOOLCHAIN_FILE "${CMAKE_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "")
 
+# Find packages first
 find_package(OpenGL REQUIRED)
-include_directories(${OpenGL_INCLUDE_DIRS})
-link_directories(${OpenGL_LIBRARY_DIRS})
-add_definitions(${OpenGL_DEFINITIONS})
+find_package(GLEW REQUIRED)
+find_package(FreeGLUT CONFIG REQUIRED)
 
-if(NOT OPENGL_FOUND)
-    message(ERROR " OPENGL not found!")
-endif(NOT OPENGL_FOUND)
+include(FetchContent)
 
-if (WIN32)
-	message(STATUS "Toolkits_DIR set to: " ${TOOLKITS_FOLDER})
-	set(TOOLKITS_FOLDER "" CACHE PATH "Path to Toolkits folder")
-	# Check GLUT Lib
-	if (NOT EXISTS "${TOOLKITS_FOLDER}/glut/GL/glut.h" OR NOT EXISTS "${TOOLKITS_FOLDER}/glut/glut32.lib")
-		message(ERROR ": GLUT not found")
-	endif (NOT EXISTS "${TOOLKITS_FOLDER}/glut/GL/glut.h" OR NOT EXISTS "${TOOLKITS_FOLDER}/glut/glut32.lib")
-	include_directories(${TOOLKITS_FOLDER}/glut)
-	target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} ${TOOLKITS_FOLDER}/glut/glut32.lib)
-	if (EXISTS "${TOOLKITS_FOLDER}/glut/glut32.dll")
-		file(COPY ${TOOLKITS_FOLDER}/glut/glut32.dll DESTINATION ${CMAKE_BINARY_DIR})
-	endif(EXISTS "${TOOLKITS_FOLDER}/glut/glut32.dll")
-	# Check GLFW Lib
-	if (NOT EXISTS "${TOOLKITS_FOLDER}/glfw/GLFW/glfw3.h" OR NOT EXISTS "${TOOLKITS_FOLDER}/glfw/glfw3.lib")
-		message(ERROR ": GLFW not found")
-	endif (NOT EXISTS "${TOOLKITS_FOLDER}/glfw/GLFW/glfw3.h" OR NOT EXISTS "${TOOLKITS_FOLDER}/glfw/glfw3.lib")
-	include_directories(${TOOLKITS_FOLDER}/glfw)
-	target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} ${TOOLKITS_FOLDER}/glfw/glfw3.lib)
-	if (EXISTS "${TOOLKITS_FOLDER}/glfw/glfw3.dll")
-		file(COPY ${TOOLKITS_FOLDER}/glfw/glfw3.dll DESTINATION ${CMAKE_BINARY_DIR})
-	endif(EXISTS "${TOOLKITS_FOLDER}/glfw/glfw3.dll")
-	set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})
-else (WIN32) # Linux and Mac
-	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} Wno-deprecated")
-	# Check GLUT Lib
-	find_package(GLUT REQUIRED)
-	include_directories(${GLUT_INCLUDE_DIR})
-	link_directories(${GLUT_LIBRARY_DIRS})
-	add_definitions(${GLUT_DEFINITIONS})
-	target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} ${GLUT_LIBRARIES})
-	if(NOT GLUT_FOUND)
-		message(ERROR ": GLUT not found!")
-	endif(NOT GLUT_FOUND)
-endif(WIN32)
+# Dependencies
+FetchContent_Declare(fmt GIT_REPOSITORY "https://github.com/fmtlib/fmt")
+FetchContent_Declare(glm GIT_REPOSITORY "https://github.com/g-truc/glm")
+FetchContent_Declare(imgui
+    GIT_REPOSITORY "https://github.com/ocornut/imgui"
+)
+
+FetchContent_MakeAvailable(fmt glm imgui)
+
+# Custom ImGui with FreeGLUT backend
+add_library(CustomImgui STATIC
+    ${imgui_SOURCE_DIR}/backends/imgui_impl_glut.cpp  # Note: This should be FreeGLUT
+    ${imgui_SOURCE_DIR}/backends/imgui_impl_opengl3.cpp
+    ${imgui_SOURCE_DIR}/imgui.cpp
+    ${imgui_SOURCE_DIR}/imgui_draw.cpp
+    ${imgui_SOURCE_DIR}/imgui_demo.cpp
+    ${imgui_SOURCE_DIR}/imgui_tables.cpp
+    ${imgui_SOURCE_DIR}/imgui_widgets.cpp
+)
+
+target_include_directories(CustomImgui PUBLIC 
+    ${imgui_SOURCE_DIR}
+    ${imgui_SOURCE_DIR}/backends
+)
+
+target_link_libraries(CustomImgui PRIVATE 
+    $<IF:$<TARGET_EXISTS:FreeGLUT::freeglut>,FreeGLUT::freeglut,FreeGLUT::freeglut_static>
+    OpenGL::GL
+    GLEW::GLEW
+)
+
+# Include the common include directory
+include_directories(${CMAKE_SOURCE_DIR}/common/include)
+
+# Add subdirectories
+add_subdirectory(common)
+add_subdirectory(generator)
+add_subdirectory(engine)
+
+# Ensure the generator and engine targets can see the common include directory
+target_include_directories(generator PUBLIC ${CMAKE_SOURCE_DIR}/common/include)
+# ading also  /lib to the include path
+target_include_directories(generator PUBLIC ${CMAKE_SOURCE_DIR}/lib)
+# to engine also 
+target_include_directories(engine PUBLIC ${CMAKE_SOURCE_DIR}/lib)
+
+
+target_include_directories(engine PUBLIC ${CMAKE_SOURCE_DIR}/common/include)

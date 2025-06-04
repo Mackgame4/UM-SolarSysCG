@@ -1,0 +1,11 @@
+{
+  "name": "cg-project",
+  "version": "1.0.0",
+  "dependencies": [
+    "freeglut",
+    "opengl",
+    "glm",
+    "glew",
+    "imgui"
+  ]
+}

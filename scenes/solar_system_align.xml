@@ -1,0 +1,1090 @@
+<world>
+    <window width="1080" height="720" />
+    <camera>
+        <position x="10" y="10" z="10" />
+        <lookAt x="0" y="0" z="0" />
+        <up x="0" y="1" z="0" />
+        <projection fov="60" near="1" far="1000" />
+    </camera>
+    <group>
+        <group name="Sun">
+            <models>
+                <model file="planet.3d">
+                </model>
+            </models>
+            <transform>
+                <scale x="3" y="3" z="3" />
+            </transform>
+        </group>
+        <group name="Mercury">
+            <models>
+                <model file="planet.3d">
+                </model>
+            </models>
+            <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                <translate x="4.0" y="0" z="0" />
+                <scale x="0.040661666666666665" y="0.040661666666666665" z="0.040661666666666665" />
+            </transform>
+        </group>
+        <group name="Venus">
+            <models>
+                <model file="planet.3d">
+                </model>
+            </models>
+            <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                <translate x="5.0" y="0" z="0" />
+                <scale x="0.10086333333333333" y="0.10086333333333333" z="0.10086333333333333" />
+            </transform>
+        </group>
+        <group name="Earth">
+            <models>
+                <model file="planet.3d">
+                </model>
+            </models>
+            <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                <translate x="5.5" y="0" z="0" />
+                <scale x="0.10618333333333334" y="0.10618333333333334" z="0.10618333333333334" />
+            </transform>
+            <group name="Moon">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.8561244306358335" y="0" z="0" />
+                    <scale x="0.27272013812588286" y="0.27272013812588286" z="0.27272013812588286" />
+                </transform>
+            </group>
+        </group>
+        <group name="Mars">
+            <models>
+                <model file="planet.3d">
+                </model>
+            </models>
+            <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                <translate x="7.0" y="0" z="0" />
+                <scale x="0.05649166666666667" y="0.05649166666666667" z="0.05649166666666667" />
+            </transform>
+            <group name="Phobos">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.438803573534457" y="0" z="0" />
+                    <scale x="0.003274819294881251" y="0.003274819294881251" z="0.003274819294881251" />
+                </transform>
+            </group>
+            <group name="Deimos">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.0439549288582697" y="0" z="0" />
+                    <scale x="0.0018291783448886267" y="0.0018291783448886267" z="0.0018291783448886267" />
+                </transform>
+            </group>
+        </group>
+        <group name="Jupiter">
+            <models>
+                <model file="planet.3d">
+                </model>
+            </models>
+            <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                <translate x="16.0" y="0" z="0" />
+                <scale x="1.1651833333333332" y="1.1651833333333332" z="1.1651833333333332" />
+            </transform>
+            <group name="Io">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.42618841644405" y="0" z="0" />
+                    <scale x="0.026055985467236916" y="0.026055985467236916" z="0.026055985467236916" />
+                </transform>
+            </group>
+            <group name="Europa">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.4507122058331294" y="0" z="0" />
+                    <scale x="0.02232552817153238" y="0.02232552817153238" z="0.02232552817153238" />
+                </transform>
+            </group>
+            <group name="Ganymede">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.203163709419606" y="0" z="0" />
+                    <scale x="0.037636423452675545" y="0.037636423452675545" z="0.037636423452675545" />
+                </transform>
+            </group>
+            <group name="Callisto">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.29300261728286" y="0" z="0" />
+                    <scale x="0.03447669179385219" y="0.03447669179385219" z="0.03447669179385219" />
+                </transform>
+            </group>
+            <group name="Amalthea">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.5012239317504545" y="0" z="0" />
+                    <scale x="0.00119366051122141" y="0.00119366051122141" z="0.00119366051122141" />
+                </transform>
+            </group>
+            <group name="Himalia">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.659695725758951" y="0" z="0" />
+                    <scale x="0.0012158315572656665" y="0.0012158315572656665" z="0.0012158315572656665" />
+                </transform>
+            </group>
+            <group name="Elara">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.5045521067043688" y="0" z="0" />
+                    <scale x="0.0006150677289696901" y="0.0006150677289696901" z="0.0006150677289696901" />
+                </transform>
+            </group>
+            <group name="Pasiphae">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.3091516908310337" y="0" z="0" />
+                    <scale x="0.0004291170202114117" y="0.0004291170202114117" z="0.0004291170202114117" />
+                </transform>
+            </group>
+            <group name="Sinope">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.662808489858406" y="0" z="0" />
+                    <scale x="0.00027177411280056074" y="0.00027177411280056074" z="0.00027177411280056074" />
+                </transform>
+            </group>
+            <group name="Lysithea">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.4190067001623516" y="0" z="0" />
+                    <scale x="0.000257470212126847" y="0.000257470212126847" z="0.000257470212126847" />
+                </transform>
+            </group>
+            <group name="Carme">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.426944158436826" y="0" z="0" />
+                    <scale x="0.00032898971549541565" y="0.00032898971549541565" z="0.00032898971549541565" />
+                </transform>
+            </group>
+            <group name="Ananke">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.158382184250134" y="0" z="0" />
+                    <scale x="0.00020025460943199212" y="0.00020025460943199212" z="0.00020025460943199212" />
+                </transform>
+            </group>
+            <group name="Leda">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.0937814301964286" y="0" z="0" />
+                    <scale x="0.0001430390067371372" y="0.0001430390067371372" z="0.0001430390067371372" />
+                </transform>
+            </group>
+            <group name="Thebe">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.2276492418865246" y="0" z="0" />
+                    <scale x="0.0007051823032140865" y="0.0007051823032140865" z="0.0007051823032140865" />
+                </transform>
+            </group>
+            <group name="Adrastea">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.4730673106690926" y="0" z="0" />
+                    <scale x="0.00011729198552445253" y="0.00011729198552445253" z="0.00011729198552445253" />
+                </transform>
+            </group>
+            <group name="Metis">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.558638435637881" y="0" z="0" />
+                    <scale x="0.00030753386448484506" y="0.00030753386448484506" z="0.00030753386448484506" />
+                </transform>
+            </group>
+            <group name="Callirrhoe">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.028337794452852" y="0" z="0" />
+                    <scale x="6.1506772896969e-05" y="6.1506772896969e-05" z="6.1506772896969e-05" />
+                </transform>
+            </group>
+            <group name="Themisto">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.7058720382804304" y="0" z="0" />
+                    <scale x="5.721560269485489e-05" y="5.721560269485489e-05" z="5.721560269485489e-05" />
+                </transform>
+            </group>
+            <group name="Megaclite">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.03926492841269" y="0" z="0" />
+                    <scale x="3.8620531819027055e-05" y="3.8620531819027055e-05" z="3.8620531819027055e-05" />
+                </transform>
+            </group>
+            <group name="Taygete">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.29711149200756" y="0" z="0" />
+                    <scale x="3.57597516842843e-05" y="3.57597516842843e-05" z="3.57597516842843e-05" />
+                </transform>
+            </group>
+            <group name="Chaldene">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.5509720653751515" y="0" z="0" />
+                    <scale x="2.7177411280056074e-05" y="2.7177411280056074e-05" z="2.7177411280056074e-05" />
+                </transform>
+            </group>
+            <group name="Harpalyke">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.0650366011757604" y="0" z="0" />
+                    <scale x="3.14685814821702e-05" y="3.14685814821702e-05" z="3.14685814821702e-05" />
+                </transform>
+            </group>
+            <group name="S/2003 J15">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.6222703454775587" y="0" z="0" />
+                    <scale x="1.4303900673713723e-05" y="1.4303900673713723e-05" z="1.4303900673713723e-05" />
+                </transform>
+            </group>
+            <group name="S/2003 J16">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.385295908732822" y="0" z="0" />
+                    <scale x="1.4303900673713723e-05" y="1.4303900673713723e-05" z="1.4303900673713723e-05" />
+                </transform>
+            </group>
+            <group name="S/2003 J18">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.4120056194792463" y="0" z="0" />
+                    <scale x="1.4303900673713723e-05" y="1.4303900673713723e-05" z="1.4303900673713723e-05" />
+                </transform>
+            </group>
+            <group name="S/2003 J19">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.9269100578586993" y="0" z="0" />
+                    <scale x="1.4303900673713723e-05" y="1.4303900673713723e-05" z="1.4303900673713723e-05" />
+                </transform>
+            </group>
+            <group name="S/2003 J23">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.05929568174798" y="0" z="0" />
+                    <scale x="1.4303900673713723e-05" y="1.4303900673713723e-05" z="1.4303900673713723e-05" />
+                </transform>
+            </group>
+            <group name="S/2010 J1">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.0873640487341834" y="0" z="0" />
+                    <scale x="1.4303900673713723e-05" y="1.4303900673713723e-05" z="1.4303900673713723e-05" />
+                </transform>
+            </group>
+            <group name="S/2010 J2">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.040666457621356" y="0" z="0" />
+                    <scale x="1.4303900673713723e-05" y="1.4303900673713723e-05" z="1.4303900673713723e-05" />
+                </transform>
+            </group>
+            <group name="S/2011 J1">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.8192946489767765" y="0" z="0" />
+                    <scale x="1.4303900673713723e-05" y="1.4303900673713723e-05" z="1.4303900673713723e-05" />
+                </transform>
+            </group>
+            <group name="S/2011 J2">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.2427535055853416" y="0" z="0" />
+                    <scale x="1.4303900673713723e-05" y="1.4303900673713723e-05" z="1.4303900673713723e-05" />
+                </transform>
+            </group>
+        </group>
+        <group name="Saturn">
+            <models>
+                <model file="planet.3d">
+                </model>
+            </models>
+            <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                <translate x="27.0" y="0" z="0" />
+                <scale x="0.9705333333333334" y="0.9705333333333334" z="0.9705333333333334" />
+            </transform>
+            <group name="Saturn-Ring">
+                <models>
+                    <model file="donut.3d">
+                    </model>
+                </models>
+                <transform>
+                    <rotate angle="215.0" x="1" y="0" z="0" />
+                    <scale x="0.7" y="0.1" z="0.7" />
+                </transform>
+            </group>
+            <group name="Mimas">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.6461094570138701" y="0" z="0" />
+                    <scale x="0.0034036268718230524" y="0.0034036268718230524" z="0.0034036268718230524" />
+                </transform>
+            </group>
+            <group name="Enceladus">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.3967215946805798" y="0" z="0" />
+                    <scale x="0.004329234784997939" y="0.004329234784997939" z="0.004329234784997939" />
+                </transform>
+            </group>
+            <group name="Tethys">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.243147517436417" y="0" z="0" />
+                    <scale x="0.009153043000412144" y="0.009153043000412144" z="0.009153043000412144" />
+                </transform>
+            </group>
+            <group name="Dione">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.3687794587040223" y="0" z="0" />
+                    <scale x="0.0096458991619728" y="0.0096458991619728" z="0.0096458991619728" />
+                </transform>
+            </group>
+            <group name="Rhea">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.7074362297578694" y="0" z="0" />
+                    <scale x="0.013125085863442779" y="0.013125085863442779" z="0.013125085863442779" />
+                </transform>
+            </group>
+            <group name="Titan">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.6171075284608516" y="0" z="0" />
+                    <scale x="0.044215036406099736" y="0.044215036406099736" z="0.044215036406099736" />
+                </transform>
+            </group>
+            <group name="Hyperion">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.3620451716042163" y="0" z="0" />
+                    <scale x="0.0023183129550762467" y="0.0023183129550762467" z="0.0023183129550762467" />
+                </transform>
+            </group>
+            <group name="Iapetus">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.220574358222307" y="0" z="0" />
+                    <scale x="0.012632229701882127" y="0.012632229701882127" z="0.012632229701882127" />
+                </transform>
+            </group>
+            <group name="Phoebe">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.7784267081925158" y="0" z="0" />
+                    <scale x="0.0018288913312268168" y="0.0018288913312268168" z="0.0018288913312268168" />
+                </transform>
+            </group>
+            <group name="Janus">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.522498216704926" y="0" z="0" />
+                    <scale x="0.001536955625772771" y="0.001536955625772771" z="0.001536955625772771" />
+                </transform>
+            </group>
+            <group name="S/2004 S12">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.9672345668341147" y="0" z="0" />
+                    <scale x="4.293172139030086e-05" y="4.293172139030086e-05" z="4.293172139030086e-05" />
+                </transform>
+            </group>
+            <group name="S/2004 S13">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.108816105592664" y="0" z="0" />
+                    <scale x="5.151806566836104e-05" y="5.151806566836104e-05" z="5.151806566836104e-05" />
+                </transform>
+            </group>
+            <group name="S/2004 S17">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.6673300913508087" y="0" z="0" />
+                    <scale x="3.434537711224069e-05" y="3.434537711224069e-05" z="3.434537711224069e-05" />
+                </transform>
+            </group>
+            <group name="S/2006 S1">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.952421538394056" y="0" z="0" />
+                    <scale x="5.151806566836104e-05" y="5.151806566836104e-05" z="5.151806566836104e-05" />
+                </transform>
+            </group>
+            <group name="S/2006 S3">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.0914099900213396" y="0" z="0" />
+                    <scale x="4.293172139030086e-05" y="4.293172139030086e-05" z="4.293172139030086e-05" />
+                </transform>
+            </group>
+            <group name="S/2007 S2">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.5381745195138101" y="0" z="0" />
+                    <scale x="5.151806566836104e-05" y="5.151806566836104e-05" z="5.151806566836104e-05" />
+                </transform>
+            </group>
+            <group name="S/2007 S3">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.219760483035945" y="0" z="0" />
+                    <scale x="3.434537711224069e-05" y="3.434537711224069e-05" z="3.434537711224069e-05" />
+                </transform>
+            </group>
+        </group>
+        <group name="Uranus">
+            <models>
+                <model file="planet.3d">
+                </model>
+            </models>
+            <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                <translate x="52.0" y="0" z="0" />
+                <scale x="0.4227" y="0.4227" z="0.4227" />
+            </transform>
+            <group name="Ariel">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.5144415941825085" y="0" z="0" />
+                    <scale x="0.022825486948978787" y="0.022825486948978787" z="0.022825486948978787" />
+                </transform>
+            </group>
+            <group name="Umbriel">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.298707975025892" y="0" z="0" />
+                    <scale x="0.023054175538206767" y="0.023054175538206767" z="0.023054175538206767" />
+                </transform>
+            </group>
+            <group name="Titania">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.2494938273384943" y="0" z="0" />
+                    <scale x="0.031105591041715952" y="0.031105591041715952" z="0.031105591041715952" />
+                </transform>
+            </group>
+            <group name="Oberon">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.4687879140110236" y="0" z="0" />
+                    <scale x="0.030021291696238465" y="0.030021291696238465" z="0.030021291696238465" />
+                </transform>
+            </group>
+            <group name="Miranda">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.008602505336893" y="0" z="0" />
+                    <scale x="0.009297374024130589" y="0.009297374024130589" z="0.009297374024130589" />
+                </transform>
+            </group>
+            <group name="Cordelia">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.494670637693283" y="0" z="0" />
+                    <scale x="0.0007925242488762716" y="0.0007925242488762716" z="0.0007925242488762716" />
+                </transform>
+            </group>
+            <group name="Ophelia">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.9656951852915214" y="0" z="0" />
+                    <scale x="0.0008437820361170253" y="0.0008437820361170253" z="0.0008437820361170253" />
+                </transform>
+            </group>
+            <group name="Bianca">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.4529482418237443" y="0" z="0" />
+                    <scale x="0.0010645848119233499" y="0.0010645848119233499" z="0.0010645848119233499" />
+                </transform>
+            </group>
+            <group name="Cressida">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.6898425936601664" y="0" z="0" />
+                    <scale x="0.0016165917514391608" y="0.0016165917514391608" z="0.0016165917514391608" />
+                </transform>
+            </group>
+            <group name="Desdemona">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.4233091175660766" y="0" z="0" />
+                    <scale x="0.0013800173487895277" y="0.0013800173487895277" z="0.0013800173487895277" />
+                </transform>
+            </group>
+            <group name="Juliet">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.7490588790140171" y="0" z="0" />
+                    <scale x="0.0020897405567384276" y="0.0020897405567384276" z="0.0020897405567384276" />
+                </transform>
+            </group>
+            <group name="Portia">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.2061881244760637" y="0" z="0" />
+                    <scale x="0.0027600346975790555" y="0.0027600346975790555" z="0.0027600346975790555" />
+                </transform>
+            </group>
+            <group name="Rosalind">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.8450056168556457" y="0" z="0" />
+                    <scale x="0.0014194464158977997" y="0.0014194464158977997" z="0.0014194464158977997" />
+                </transform>
+            </group>
+            <group name="Belinda">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.4622765198927477" y="0" z="0" />
+                    <scale x="0.0017743080198722497" y="0.0017743080198722497" z="0.0017743080198722497" />
+                </transform>
+            </group>
+            <group name="Puck">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.9716208821766923" y="0" z="0" />
+                    <scale x="0.00319375443577005" y="0.00319375443577005" z="0.00319375443577005" />
+                </transform>
+            </group>
+            <group name="Caliban">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.393258984734472" y="0" z="0" />
+                    <scale x="0.0014194464158977997" y="0.0014194464158977997" z="0.0014194464158977997" />
+                </transform>
+            </group>
+            <group name="Sycorax">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.191114516868292" y="0" z="0" />
+                    <scale x="0.0029571800331204164" y="0.0029571800331204164" z="0.0029571800331204164" />
+                </transform>
+            </group>
+            <group name="Prospero">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.0300681416645125" y="0" z="0" />
+                    <scale x="0.0009857266777068055" y="0.0009857266777068055" z="0.0009857266777068055" />
+                </transform>
+            </group>
+            <group name="Setebos">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.073080328925688" y="0" z="0" />
+                    <scale x="0.0009462976105985332" y="0.0009462976105985332" z="0.0009462976105985332" />
+                </transform>
+            </group>
+            <group name="Cupid">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.8494424204199997" y="0" z="0" />
+                    <scale x="0.0003548616039744499" y="0.0003548616039744499" z="0.0003548616039744499" />
+                </transform>
+            </group>
+        </group>
+        <group name="Neptune">
+            <models>
+                <model file="planet.3d">
+                </model>
+            </models>
+            <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                <translate x="79.0" y="0" z="0" />
+                <scale x="0.4110333333333333" y="0.4110333333333333" z="0.4110333333333333" />
+            </transform>
+            <group name="Triton">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.5809853219613137" y="0" z="0" />
+                    <scale x="0.054877949882410196" y="0.054877949882410196" z="0.054877949882410196" />
+                </transform>
+            </group>
+            <group name="Nereid">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.190296694415417" y="0" z="0" />
+                    <scale x="0.006893196010055958" y="0.006893196010055958" z="0.006893196010055958" />
+                </transform>
+            </group>
+            <group name="Naiad">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.8989268329673779" y="0" z="0" />
+                    <scale x="0.0013380909901873328" y="0.0013380909901873328" z="0.0013380909901873328" />
+                </transform>
+            </group>
+            <group name="Thalassa">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.4620301852509465" y="0" z="0" />
+                    <scale x="0.0016624766847782013" y="0.0016624766847782013" z="0.0016624766847782013" />
+                </transform>
+            </group>
+            <group name="Despina">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.3192554379592587" y="0" z="0" />
+                    <scale x="0.003041115886789393" y="0.003041115886789393" z="0.003041115886789393" />
+                </transform>
+            </group>
+            <group name="Galatea">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.7927668316112229" y="0" z="0" />
+                    <scale x="0.003568242640499554" y="0.003568242640499554" z="0.003568242640499554" />
+                </transform>
+            </group>
+            <group name="Larissa">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.5064768729139293" y="0" z="0" />
+                    <scale x="0.003933176546914281" y="0.003933176546914281" z="0.003933176546914281" />
+                </transform>
+            </group>
+            <group name="Proteus">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.3250981109631375" y="0" z="0" />
+                    <scale x="0.0085151244830103" y="0.0085151244830103" z="0.0085151244830103" />
+                </transform>
+            </group>
+            <group name="Halimede">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.070466360789782" y="0" z="0" />
+                    <scale x="0.0012569945665396158" y="0.0012569945665396158" z="0.0012569945665396158" />
+                </transform>
+            </group>
+            <group name="Psamathe">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.7276954067378034" y="0" z="0" />
+                    <scale x="0.0008109642364771714" y="0.0008109642364771714" z="0.0008109642364771714" />
+                </transform>
+            </group>
+            <group name="Sao">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.241000575063128" y="0" z="0" />
+                    <scale x="0.0008920606601248885" y="0.0008920606601248885" z="0.0008920606601248885" />
+                </transform>
+            </group>
+        </group>
+        <group name="Pluto">
+            <models>
+                <model file="planet.3d">
+                </model>
+            </models>
+            <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                <translate x="93.0" y="0" z="0" />
+                <scale x="0.019805" y="0.019805" z="0.019805" />
+            </transform>
+            <group name="Charon">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.3815166147511424" y="0" z="0" />
+                    <scale x="0.5079525372380712" y="0.5079525372380712" z="0.5079525372380712" />
+                </transform>
+            </group>
+            <group name="Nix">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="2.2684470302116804" y="0" z="0" />
+                    <scale x="0.019355381637633597" y="0.019355381637633597" z="0.019355381637633597" />
+                </transform>
+            </group>
+            <group name="Hydra">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.7216532318809283" y="0" z="0" />
+                    <scale x="0.025666919128166286" y="0.025666919128166286" z="0.025666919128166286" />
+                </transform>
+            </group>
+            <group name="Kerberos">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.6835365044164001" y="0" z="0" />
+                    <scale x="0.011781536648994362" y="0.011781536648994362" z="0.011781536648994362" />
+                </transform>
+            </group>
+            <group name="Styx">
+                <models>
+                    <model file="planet.3d">
+                    </model>
+                </models>
+                <transform>
+            <rotate angle="125.32185250821448" x="0" y="1" z="0" />
+                    <translate x="1.644431729314775" y="0" z="0" />
+                    <scale x="0.008415383320710259" y="0.008415383320710259" z="0.008415383320710259" />
+                </transform>
+            </group>
+        </group>
+        <group name="Asteroids Belt">
+
+        </group>
+    </group>
+    
+</world>
